@@ -1,5 +1,12 @@
 function singleNumber(nums) {
-  // Start coding here
+ 
+  const count = nums.reduce((acc, num) => {
+    acc[num] = (acc[num] || 0) + 1;
+    return acc;
+  }, {});
+
+  
+  return nums.filter(num => count[num] === 1)[0];
 }
 
 let result1 = singleNumber([2, 2, 1]);
