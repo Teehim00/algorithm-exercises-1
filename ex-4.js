@@ -1,5 +1,5 @@
 function findOdd(nums) {
-  // Start coding here
+  const count = nums.reduce((acc, num) => {});
 }
 
 let result1 = findOdd([0]);
